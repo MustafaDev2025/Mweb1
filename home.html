@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website - Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 0;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .card {
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="container">
+      <h1>Welcome to My Website</h1>
+      <p class="lead">A simple homepage example for GitHub with Services & Packages</p>
+      <a href="#about" class="btn btn-light btn-lg mt-3">Learn More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <p class="mt-3">
+        We provide modern web solutions, services, and affordable monthly packages
+        to help your business grow online.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Web Design</h4>
+              <p class="card-text">Modern and responsive designs for your business website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Development</h4>
+              <p class="card-text">Frontend & backend solutions with best coding practices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">SEO & Marketing</h4>
+              <p class="card-text">Boost your website ranking and grow your online presence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <div class="container text-center">
+      <h2>Monthly Packages</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm border-primary">
+            <div class="card-body">
+              <h4 class="card-title">Basic</h4>
+              <h3 class="text-primary">$19<span class="fs-6">/mo</span></h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>✔ 1 Website</li>
+                <li>✔ Free SSL</li>
+                <li>✔ Basic Support</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-success">
+            <div class="card-body">
+              <h4 class="card-title">Standard</h4>
+              <h3 class="text-success">$49<span class="fs-6">/mo</span></h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>✔ 3 Websites</li>
+                <li>✔ Free SSL + Domain</li>
+                <li>✔ Priority Support</li>
+              </ul>
+              <a href="#" class="btn btn-success">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm border-warning">
+            <div class="card-body">
+              <h4 class="card-title">Premium</h4>
+              <h3 class="text-warning">$99<span class="fs-6">/mo</span></h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>✔ Unlimited Websites</li>
+                <li>✔ Free SSL + Domain</li>
+                <li>✔ 24/7 Support</li>
+              </ul>
+              <a href="#" class="btn btn-warning">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p class="mt-3">Have any questions? Reach out to us!</p>
+      <a href="mailto:abc33343406963@gmail.com" class="btn btn-primary">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyWebsite | Built with ❤️ by MustafaDev2025</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
